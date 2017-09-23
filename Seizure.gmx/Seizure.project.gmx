@@ -11,13 +11,13 @@
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
+    <script>scripts\init_globals.gml</script>
     <scripts name="player">
       <script>scripts\init_player.gml</script>
       <script>scripts\update_player.gml</script>
       <script>scripts\move_player.gml</script>
       <script>scripts\shoot.gml</script>
     </scripts>
-    <script>scripts\init_globals.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\player_o</object>
