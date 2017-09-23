@@ -19,6 +19,8 @@
       <script>scripts\move_player.gml</script>
       <script>scripts\shoot.gml</script>
     </scripts>
+    <script>scripts\destroyOffScreen.gml</script>
+    <script>scripts\destroyOffSide.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\player_o</object>
