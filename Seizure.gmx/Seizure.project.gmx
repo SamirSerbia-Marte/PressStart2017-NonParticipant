@@ -8,6 +8,8 @@
   <sprites name="sprites">
     <sprite>sprites\seizure_spr</sprite>
     <sprite>sprites\enemy1_spr</sprite>
+    <sprite>sprites\enemyBullet_spr</sprite>
+    <sprite>sprites\bullet_spr</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -26,6 +28,7 @@
     <object>objects\player_o</object>
     <object>objects\bullet_o</object>
     <object>objects\enemy1_o</object>
+    <object>objects\enemyBullet_o</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\initGlobals_rm</room>
