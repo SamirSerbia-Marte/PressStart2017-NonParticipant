@@ -5,5 +5,5 @@ playerNum = argument0;
 pHealth = 100;
 
 // Initialize Stats
-moveSpeed = 25;
+moveSpeed = 30;
 bulletSpeed = 80;
