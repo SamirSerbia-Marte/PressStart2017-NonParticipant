@@ -91,7 +91,7 @@ direction = point_direction(x,y,target.x, target.y);
 if(speed &lt;= 0)
 {
     // Explode
-    growingCircle(16, bulletSpeed);
+    explodeBullets(16, bulletSpeed);
     instance_destroy(self);
 }
 </string>

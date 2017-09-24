@@ -1,3 +1,10 @@
+/**
+ * Explodes bullets in as many directions as the bullet count
+ * 
+ * @param   bulletCount (arg0)      The number of bullets to explode
+ * @param   bulletSpeed (arg1)      The speed of the bullets
+ */
+
 var bulletCount = argument0;
 var bulletSpeed = argument1;
 var angleIncrement = 360/bulletCount;

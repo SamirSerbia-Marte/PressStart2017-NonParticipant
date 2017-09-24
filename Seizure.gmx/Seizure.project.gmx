@@ -29,9 +29,11 @@
       <script>scripts\move_player.gml</script>
       <script>scripts\shoot.gml</script>
     </scripts>
+    <scripts name="attacks">
+      <script>scripts\explodeBullets.gml</script>
+    </scripts>
     <script>scripts\destroyOffScreen.gml</script>
     <script>scripts\destroyOffSide.gml</script>
-    <script>scripts\growingCircle.gml</script>
   </scripts>
   <shaders name="shaders">
     <shaders name="shd_grp_glow">
