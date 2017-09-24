@@ -27,8 +27,8 @@
             <kind>1</kind>
             <string>/// Initial Conditions
 // Init speed
-moveSpeed = 30;
-bulletSpeed = 60;
+moveSpeed = 15;
+bulletSpeed = 30;
 
 // Initial Target
 target = player_o;

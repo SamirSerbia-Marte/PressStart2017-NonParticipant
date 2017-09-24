@@ -655,5 +655,9 @@
     <option_xbone_texture_page>1024</option_xbone_texture_page>
     <option_xbone_title_id></option_xbone_title_id>
   </Options>
-  <ConfigConstants/>
+  <ConfigConstants>
+    <constants number="1">
+      <constant name="MISSILE_DELAY">20</constant>
+    </constants>
+  </ConfigConstants>
 </Config>

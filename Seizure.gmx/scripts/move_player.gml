@@ -21,9 +21,3 @@ if(keyboard_check(global.keyDown[playerNum]))
     // Move down
     y += moveSpeed;
 }
-
-if(keyboard_check(global.keyAction[playerNum]))
-{
-    // Shoot bullet
-    shoot();
-}
