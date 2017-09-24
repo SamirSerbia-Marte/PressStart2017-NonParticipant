@@ -23,6 +23,9 @@
       <sprite>sprites\enemy1_glow_spr</sprite>
       <sprite>sprites\enemy2_glow_spr</sprite>
       <sprite>sprites\enemy3_glow_spr</sprite>
+      <sprite>sprites\polyHolly_glow_spr</sprite>
+      <sprite>sprites\polyHollyHappy_glow_spr</sprite>
+      <sprite>sprites\polyHollyWink_glow_spr</sprite>
     </sprites>
     <sprite>sprites\seizure_spr</sprite>
     <sprite>sprites\enemy1_spr</sprite>
@@ -34,6 +37,10 @@
     <sprite>sprites\flame_spr</sprite>
     <sprite>sprites\laser_spr</sprite>
     <sprite>sprites\polyHolly_spr</sprite>
+    <sprite>sprites\polyHollyHappy_spr</sprite>
+    <sprite>sprites\polyHollyWink_spr</sprite>
+    <sprite>sprites\polyHollySad_spr</sprite>
+    <sprite>sprites\qbert_spr</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\lightBackground</background>
@@ -96,6 +103,8 @@
     <object>objects\laser_o</object>
     <object>objects\enemyLaser_o</object>
     <object>objects\timelineInvoker_o</object>
+    <object>objects\polyHolly_o</object>
+    <object>objects\qbertChaos_o</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\level_tm</timeline>
