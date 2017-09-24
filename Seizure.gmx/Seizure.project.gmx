@@ -8,8 +8,10 @@
   </NewExtensions>
   <sounds name="sound"/>
   <sprites name="sprites">
+    <sprites name="Glow Maps">
+      <sprite>sprites\seizure_glow_spr</sprite>
+    </sprites>
     <sprite>sprites\seizure_spr</sprite>
-    <sprite>sprites\seizure_glow_spr</sprite>
     <sprite>sprites\enemy1_spr</sprite>
     <sprite>sprites\enemyBullet_spr</sprite>
     <sprite>sprites\bullet_spr</sprite>
