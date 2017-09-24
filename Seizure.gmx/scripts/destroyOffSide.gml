@@ -18,5 +18,5 @@ var bottom = argument3 && y - (sprite_height/2) > room_height;
 
 if(left || right || top || bottom)
 {
-    instance_destroy(self);
+    instance_destroy(self, false);
 }
