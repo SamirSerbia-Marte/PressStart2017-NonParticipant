@@ -3,10 +3,13 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <NewExtensions/>
+  <NewExtensions>
+    <extension index="0">extensions\Glow Shader</extension>
+  </NewExtensions>
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\seizure_spr</sprite>
+    <sprite>sprites\seizure_glow_spr</sprite>
     <sprite>sprites\enemy1_spr</sprite>
     <sprite>sprites\enemyBullet_spr</sprite>
     <sprite>sprites\bullet_spr</sprite>
@@ -24,7 +27,18 @@
     <script>scripts\destroyOffScreen.gml</script>
     <script>scripts\destroyOffSide.gml</script>
   </scripts>
+  <shaders name="shaders">
+    <shaders name="shd_grp_glow">
+      <shader type="GLSLES">shaders\shd_glow_map.shader</shader>
+    </shaders>
+  </shaders>
   <objects name="objects">
+    <objects name="obj_grp_glow">
+      <object>objects\obj_glow_controller</object>
+      <object>objects\obj_glow_sprite</object>
+      <object>objects\par_is_glow_background</object>
+      <object>objects\par_is_glow_sprite</object>
+    </objects>
     <object>objects\player_o</object>
     <object>objects\bullet_o</object>
     <object>objects\enemy1_o</object>
