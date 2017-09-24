@@ -15,6 +15,7 @@
     </sprites>
     <sprite>sprites\seizure_spr</sprite>
     <sprite>sprites\enemy1_spr</sprite>
+    <sprite>sprites\enemy2_spr</sprite>
     <sprite>sprites\enemyBullet_spr</sprite>
     <sprite>sprites\bullet_spr</sprite>
   </sprites>
@@ -46,6 +47,7 @@
     <object>objects\player_o</object>
     <object>objects\bullet_o</object>
     <object>objects\enemy1_o</object>
+    <object>objects\enemy2_o</object>
     <object>objects\enemyBullet_o</object>
   </objects>
   <rooms name="rooms">
