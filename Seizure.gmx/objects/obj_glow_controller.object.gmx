@@ -41,7 +41,7 @@ var_sigma[3] = 0.55;
 
 index = 0;
 
-alarm_set(0, 2);
+alarm_set(0, 6);
 </string>
           </argument>
         </arguments>
@@ -69,7 +69,7 @@ alarm_set(0, 2);
 if(index &gt; 3)
     index = 0;
 
-alarm_set(0, 2);
+alarm_set(0, 6);
 </string>
           </argument>
         </arguments>
