@@ -6,7 +6,15 @@
   <NewExtensions>
     <extension index="0">extensions\Glow Shader</extension>
   </NewExtensions>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\explosion_s</sound>
+    <sound>sound\firing</sound>
+    <sound>sound\menu</sound>
+    <sound>sound\select</sound>
+    <sound>sound\boss_theme</sound>
+    <sound>sound\main_theme</sound>
+    <sound>sound\lazer_s</sound>
+  </sounds>
   <sprites name="sprites">
     <sprites name="Glow Maps">
       <sprite>sprites\seizure_glow_spr</sprite>
