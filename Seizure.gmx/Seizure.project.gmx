@@ -18,6 +18,7 @@
     <sprite>sprites\enemy2_spr</sprite>
     <sprite>sprites\enemyBullet_spr</sprite>
     <sprite>sprites\bullet_spr</sprite>
+    <sprite>sprites\explosion_spr</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -52,6 +53,7 @@
     <object>objects\enemy1_o</object>
     <object>objects\enemy2_o</object>
     <object>objects\enemyBullet_o</object>
+    <object>objects\explosion_o</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\initGlobals_rm</room>
