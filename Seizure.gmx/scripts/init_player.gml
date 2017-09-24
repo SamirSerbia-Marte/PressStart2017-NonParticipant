@@ -13,3 +13,6 @@ leftBarrel = true;
 
 // Missile Delay
 missileDelay = 0
+
+// Laser object
+myLaser = 0;

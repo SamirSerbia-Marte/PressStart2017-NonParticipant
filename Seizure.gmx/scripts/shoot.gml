@@ -23,3 +23,11 @@ if(missileDelay = 0)
     }
     missileDelay = MISSILE_DELAY;
 }
+
+// If no laser exists, create a laser
+if(myLaser == 0)
+{
+    myLaser = instance_create(x, y-32, laser_o);
+    myLaser.parentShip = self;
+    myLaser.image_blend = c_aqua;
+}

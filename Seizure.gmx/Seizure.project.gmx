@@ -22,6 +22,7 @@
     <sprite>sprites\bullet_spr</sprite>
     <sprite>sprites\explosion_spr</sprite>
     <sprite>sprites\flame_spr</sprite>
+    <sprite>sprites\laser_spr</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\lightBackground</background>
@@ -55,12 +56,14 @@
       <object>objects\par_is_glow_background</object>
       <object>objects\par_is_glow_sprite</object>
     </objects>
+    <object>objects\enemyParent_o</object>
     <object>objects\player_o</object>
     <object>objects\bullet_o</object>
     <object>objects\enemy1_o</object>
     <object>objects\enemy2_o</object>
     <object>objects\enemyBullet_o</object>
     <object>objects\explosion_o</object>
+    <object>objects\laser_o</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\initGlobals_rm</room>
