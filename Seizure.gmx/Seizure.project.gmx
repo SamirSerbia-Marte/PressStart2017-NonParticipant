@@ -31,7 +31,12 @@
     <background>background\medBackground</background>
     <background>background\heavyBackground</background>
   </backgrounds>
-  <paths name="paths"/>
+  <paths name="paths">
+    <path>paths\enemySweep_p</path>
+    <path>paths\enemySweepRev_p</path>
+    <path>paths\enemyUTurn_p</path>
+    <path>paths\enemyUTurnRev_p</path>
+  </paths>
   <scripts name="scripts">
     <script>scripts\init_globals.gml</script>
     <scripts name="player">
@@ -61,6 +66,7 @@
     <objects name="Attacks">
       <object>objects\growRingAttack_o</object>
       <object>objects\spinRingAttack_o</object>
+      <object>objects\snakeAttack_o</object>
     </objects>
     <object>objects\enemyParent_o</object>
     <object>objects\player_o</object>
@@ -72,8 +78,11 @@
     <object>objects\explosion_o</object>
     <object>objects\laser_o</object>
     <object>objects\enemyLaser_o</object>
-    <object>objects\snakeAttack_o</object>
+    <object>objects\timelineInvoker_o</object>
   </objects>
+  <timelines name="timelines">
+    <timeline>timelines\level_tm</timeline>
+  </timelines>
   <rooms name="rooms">
     <room>rooms\initGlobals_rm</room>
     <room>rooms\testRoom</room>
