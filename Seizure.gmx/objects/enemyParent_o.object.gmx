@@ -34,6 +34,12 @@ hp = 10
 currentlyAutoMoving = false;
 autoTargetX = 0;
 autoTargetY = 0;
+
+// Destroy when offscreen flags
+leftDestroy = true;
+rightDestry = true;
+topDestroy = false;
+bottomDestroy = true;
 </string>
           </argument>
         </arguments>
@@ -56,7 +62,7 @@ autoTargetY = 0;
         <arguments>
           <argument>
             <kind>10</kind>
-            <object>explosion_o</object>
+            <object>-100</object>
           </argument>
           <argument>
             <kind>0</kind>
@@ -110,6 +116,28 @@ if(hp &lt;= 0)
         <arguments>
           <argument>
             <kind>1</kind>
+            <string>/// Destroy if offscreen
+destroyOffSide(leftDestroy, rightDestroy, topDestroy, bottomDestroy);
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
             <string>/// Increment image alpha until value of 1
 
 if(image_alpha + 0.1 &lt; 1)
@@ -136,7 +164,8 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(currentlyAutoMoving)
+            <string>/// Auto move if enabled
+if(currentlyAutoMoving)
 {
     direction = point_direction(x,y,autoTargetX, autoTargetY);
 }

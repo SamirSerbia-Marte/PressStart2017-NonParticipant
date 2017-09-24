@@ -94,10 +94,7 @@ __glow_texture = enemy2_glow_spr;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// Destroy if leaving from the left, right, or bottom sides of the screen
-destroyOffSide(true,true,false,true);
-
-if(speed &gt; 0)
+            <string>if(speed &gt; 0)
     speed -= 0.025;
 
 switch(speed)
