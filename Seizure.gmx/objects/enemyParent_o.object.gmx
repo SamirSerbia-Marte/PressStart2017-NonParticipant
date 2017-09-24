@@ -37,7 +37,7 @@ autoTargetY = 0;
 
 // Destroy when offscreen flags
 leftDestroy = true;
-rightDestry = true;
+rightDestroy = true;
 topDestroy = false;
 bottomDestroy = true;
 </string>
@@ -62,7 +62,7 @@ bottomDestroy = true;
         <arguments>
           <argument>
             <kind>10</kind>
-            <object>-100</object>
+            <object>explosion_o</object>
           </argument>
           <argument>
             <kind>0</kind>

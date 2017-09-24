@@ -99,7 +99,12 @@ if(!exists || bulletDriftSpeed &lt;= 0)
 {
     // Enable bullets to be destroyed by leaving from the top of the screen
     for(i = 0; i &lt; 8; i++)
+    {
+        if(!instance_exists(bullet[i]))
+            continue;
+        
         bullet[i].destroyOffTop = true;
+    }
     
     instance_destroy(self);
 }
