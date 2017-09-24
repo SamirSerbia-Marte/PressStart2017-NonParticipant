@@ -14,10 +14,12 @@
       <sprite>sprites\bullet_glow_spr</sprite>
       <sprite>sprites\enemy1_glow_spr</sprite>
       <sprite>sprites\enemy2_glow_spr</sprite>
+      <sprite>sprites\enemy3_glow_spr</sprite>
     </sprites>
     <sprite>sprites\seizure_spr</sprite>
     <sprite>sprites\enemy1_spr</sprite>
     <sprite>sprites\enemy2_spr</sprite>
+    <sprite>sprites\enemy3_spr</sprite>
     <sprite>sprites\enemyBullet_spr</sprite>
     <sprite>sprites\bullet_spr</sprite>
     <sprite>sprites\explosion_spr</sprite>
@@ -61,9 +63,11 @@
     <object>objects\bullet_o</object>
     <object>objects\enemy1_o</object>
     <object>objects\enemy2_o</object>
+    <object>objects\enemy3_o</object>
     <object>objects\enemyBullet_o</object>
     <object>objects\explosion_o</object>
     <object>objects\laser_o</object>
+    <object>objects\enemyLaser_o</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\initGlobals_rm</room>
