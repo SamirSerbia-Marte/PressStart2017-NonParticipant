@@ -77,7 +77,7 @@ invincible = true;
         <arguments>
           <argument>
             <kind>6</kind>
-            <sound>main_theme</sound>
+            <sound>-100</sound>
           </argument>
         </arguments>
       </action>
@@ -97,7 +97,7 @@ invincible = true;
         <arguments>
           <argument>
             <kind>6</kind>
-            <sound>boss_theme</sound>
+            <sound>-100</sound>
           </argument>
           <argument>
             <kind>3</kind>
@@ -178,7 +178,7 @@ if(phase == 0)
     
     else
     {
-        //TODO: Play WAKA WAKA
+        audio_play_sound(waka, 0, false);
         //audio_play_sound();
         phase = 1;
         invincible = false;
