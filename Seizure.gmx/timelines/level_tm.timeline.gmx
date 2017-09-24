@@ -524,7 +524,199 @@ instance_create(room_width/2, -96, growRingAttack_o);
   </entry>
   <entry>
     <step>1340</step>
-    <event/>
+    <event>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Create enemy
+var en1 = instance_create(128, -96, enemy1_o);
+var en2 = instance_create(room_width - 128, -96, enemy1_o);
+
+with(en1)
+{ 
+    path_start(leftHelix_p, 10, path_action_stop, true);
+}
+
+with(en2)
+{
+    path_start(rightHelix_p, 10, path_action_stop, true);
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+  </entry>
+  <entry>
+    <step>1360</step>
+    <event>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Create enemy
+var en1 = instance_create(128, -96, enemy1_o);
+var en2 = instance_create(room_width - 128, -96, enemy1_o);
+
+with(en1)
+{ 
+    path_start(leftHelix_p, 10, path_action_stop, true);
+}
+
+with(en2)
+{
+    path_start(rightHelix_p, 10, path_action_stop, true);
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+  </entry>
+  <entry>
+    <step>1380</step>
+    <event>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Create enemy
+var en1 = instance_create(128, -96, enemy2_o);
+var en2 = instance_create(room_width - 128, -96, enemy2_o);
+
+with(en1)
+{ 
+    path_start(leftHelix_p, 10, path_action_stop, true);
+}
+
+with(en2)
+{
+    path_start(rightHelix_p, 10, path_action_stop, true);
+}
+
+instance_create(room_width/4, y-48, growRingAttack_o);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+  </entry>
+  <entry>
+    <step>1400</step>
+    <event>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Create enemy
+var en1 = instance_create(128, -96, enemy2_o);
+var en2 = instance_create(room_width - 128, -96, enemy2_o);
+
+with(en1)
+{ 
+    path_start(leftHelix_p, 10, path_action_stop, true);
+}
+
+with(en2)
+{
+    path_start(rightHelix_p, 10, path_action_stop, true);
+}
+
+instance_create((room_width/4) * 3, y-48, growRingAttack_o);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+  </entry>
+  <entry>
+    <step>1420</step>
+    <event>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Create enemy
+var en1 = instance_create(128, -96, enemy2_o);
+var en2 = instance_create(room_width - 128, -96, enemy2_o);
+
+with(en1)
+{ 
+    path_start(leftHelix_p, 10, path_action_stop, true);
+}
+
+with(en2)
+{
+    path_start(rightHelix_p, 10, path_action_stop, true);
+}
+
+instance_create(room_width/2, y-48, growRingAttack_o);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
   </entry>
   <entry>
     <step>1440</step>
@@ -552,6 +744,131 @@ instance_create(room_width/2, -96, growRingAttack_o);
         image_angle = 270;
         autoTargetX = room_width - 128;
         autoTargetY = room_height + 96;
+    }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+  </entry>
+  <entry>
+    <step>1500</step>
+    <event>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>laserMan1 = instance_create(128, -96, enemy3_o);
+
+with(laserMan1)
+{
+    image_angle = 90;
+    autoTargetX = 128;
+    autoTargetY = room_height/4;
+    currentlyAutoMoving = true;
+}
+
+laserMan2 = instance_create(room_width - 128, room_height, enemy3_o);
+
+with(laserMan2)
+{
+    image_angle = 270;
+    autoTargetX = room_width - 128;
+    autoTargetY = (room_height/4) * 3;
+    currentlyAutoMoving = true;
+}
+
+laserMan3 = instance_create(0, (room_height/4) * 3, enemy3_o);
+
+with(laserMan3)
+{
+    image_angle = 180;
+    autoTargetX = room_width/4;
+    autoTargetY = (room_height/4) * 3;
+    currentlyAutoMoving = true;
+}
+
+laserMan4 = instance_create(0, room_height/4, enemy3_o);
+
+with(laserMan3)
+{
+    image_angle = 0;
+    autoTargetX = (room_width/4) * 3;
+    autoTargetY = room_height/4;
+    currentlyAutoMoving = true;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+  </entry>
+  <entry>
+    <step>1800</step>
+    <event>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(instance_exists(laserMan1))
+{
+    with(laserMan1)
+    {
+        autoTargetX = 128;
+        autoTargetY = -96;
+    }
+}
+
+if(instance_exists(laserMan2))
+{
+    with(laserMan2)
+    {
+        autoTargetX = room_width - 128;
+        autoTargetY = room_height + 96;
+    }
+}
+
+
+if(instance_exists(laserMan3))
+{
+    with(laserMan3)
+    {
+        autoTargetX = -128;
+        autoTargetY = (room_height/4) * 3;
+    }
+}
+
+if(instance_exists(laserMan4))
+{
+    with(laserMan4)
+    {
+        autoTargetX = room_width + 128;
+        autoTargetY = (room_height/4) * 3;
     }
 }
 </string>
