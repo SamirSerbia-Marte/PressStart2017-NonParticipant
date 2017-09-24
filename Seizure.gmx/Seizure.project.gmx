@@ -12,6 +12,8 @@
       <sprite>sprites\seizure_glow_spr</sprite>
       <sprite>sprites\enemyBullet_glow_spr</sprite>
       <sprite>sprites\bullet_glow_spr</sprite>
+      <sprite>sprites\enemy1_glow_spr</sprite>
+      <sprite>sprites\enemy2_glow_spr</sprite>
     </sprites>
     <sprite>sprites\seizure_spr</sprite>
     <sprite>sprites\enemy1_spr</sprite>

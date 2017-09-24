@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>par_is_glow_sprite</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -35,6 +35,9 @@ target = player_o;
 
 // Begin shooting alarm
 alarm_set(0, room_speed * 2);
+
+// Assign glow effect sprite
+__glow_texture = enemy1_glow_spr;
 </string>
           </argument>
         </arguments>
