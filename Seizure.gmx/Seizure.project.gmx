@@ -21,6 +21,7 @@
     <sprite>sprites\enemyBullet_spr</sprite>
     <sprite>sprites\bullet_spr</sprite>
     <sprite>sprites\explosion_spr</sprite>
+    <sprite>sprites\flame_spr</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\lightBackground</background>

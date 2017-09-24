@@ -102,7 +102,7 @@ surface_set_target(glow_pass_surface);
     }*/
     
     with (par_is_glow_sprite) {
-        draw_sprite(__glow_texture, -1, x - view_xview[0], y - view_yview[0]);
+        draw_sprite_ext(__glow_texture, -1, x - view_xview[0], y - view_yview[0], image_xscale, image_yscale, image_angle, image_blend, image_alpha);
     }
     
 surface_reset_target();
