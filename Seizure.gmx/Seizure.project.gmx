@@ -44,6 +44,8 @@
     <path>paths\enemySweepRev_p</path>
     <path>paths\enemyUTurn_p</path>
     <path>paths\enemyUTurnRev_p</path>
+    <path>paths\leftHelix_p</path>
+    <path>paths\rightHelix_p</path>
   </paths>
   <scripts name="scripts">
     <script>scripts\init_globals.gml</script>
