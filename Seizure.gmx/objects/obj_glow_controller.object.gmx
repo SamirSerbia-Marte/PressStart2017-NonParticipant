@@ -34,14 +34,14 @@ samp_glow_surface =   shader_get_sampler_index(shd_glow_map, "s_glow_surface");
 uni_glow_blur_sigma = shader_get_uniform(shd_glow_map, "u_glow_blur_sigma");
 uni_glow_resolution =   shader_get_uniform(shd_glow_map, "u_glow_resolution");
 
-var_sigma[0] = 0.4;
-var_sigma[1] = 0.01;
-var_sigma[2] = 0.5;
-var_sigma[3] = 0.1;
-
-alarm_set(0, 2);
+var_sigma[0] = 0.9;
+var_sigma[1] = 0.65;
+var_sigma[2] = 0.99;
+var_sigma[3] = 0.55;
 
 index = 0;
+
+alarm_set(0, 2);
 </string>
           </argument>
         </arguments>
