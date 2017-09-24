@@ -46,6 +46,12 @@
     <path>paths\enemyUTurnRev_p</path>
     <path>paths\leftHelix_p</path>
     <path>paths\rightHelix_p</path>
+    <path>paths\wavyLeft_p</path>
+    <path>paths\wavyRight_p</path>
+    <path>paths\snakeMid_p</path>
+    <path>paths\jaggedLeft_p</path>
+    <path>paths\jaggedRight_p</path>
+    <path>paths\crissCross_p</path>
   </paths>
   <scripts name="scripts">
     <script>scripts\init_globals.gml</script>
