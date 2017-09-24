@@ -20,7 +20,11 @@
     <sprite>sprites\bullet_spr</sprite>
     <sprite>sprites\explosion_spr</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\lightBackground</background>
+    <background>background\medBackground</background>
+    <background>background\heavyBackground</background>
+  </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\init_globals.gml</script>
