@@ -57,6 +57,7 @@
     <instance objName="enemy2_o" x="832" y="-32" name="inst_9A6CD4E6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="enemy3_o" x="608" y="288" name="inst_48F73C6A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="315"/>
     <instance objName="enemy3_o" x="96" y="1024" name="inst_1A4F8B32" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
+    <instance objName="spinRingAttack_o" x="576" y="-32" name="inst_A0B24CF3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

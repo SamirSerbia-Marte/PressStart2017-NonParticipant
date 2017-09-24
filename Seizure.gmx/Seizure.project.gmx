@@ -58,6 +58,10 @@
       <object>objects\par_is_glow_background</object>
       <object>objects\par_is_glow_sprite</object>
     </objects>
+    <objects name="Attacks">
+      <object>objects\growRingAttack_o</object>
+      <object>objects\spinRingAttack_o</object>
+    </objects>
     <object>objects\enemyParent_o</object>
     <object>objects\player_o</object>
     <object>objects\bullet_o</object>
@@ -68,7 +72,7 @@
     <object>objects\explosion_o</object>
     <object>objects\laser_o</object>
     <object>objects\enemyLaser_o</object>
-    <object>objects\growRingAttack_o</object>
+    <object>objects\object15</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\initGlobals_rm</room>
