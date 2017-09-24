@@ -27,8 +27,8 @@
             <kind>1</kind>
             <string>/// Initial Conditions
 // Init speed
-speed = 10;
-bulletSpeed = 30;
+speed = 6;
+bulletSpeed = 15;
 
 // Initial Target
 target = player_o;
@@ -79,7 +79,7 @@ switch(speed)
         break;
 }
 
-if(speed &lt; 2)
+if(speed &lt; 1)
     blinkSpeed = 80;
 else if(speed &lt; 5)
     blinkSpeed = 20;
@@ -88,9 +88,11 @@ else if(speed &lt; 10)
     
 direction = point_direction(x,y,target.x, target.y);
 
-if(speed == 0)
+if(speed &lt;= 0)
 {
     // Explode
+    growingCircle(16, bulletSpeed);
+    instance_destroy(self);
 }
 </string>
           </argument>

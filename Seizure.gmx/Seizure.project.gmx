@@ -31,6 +31,7 @@
     </scripts>
     <script>scripts\destroyOffScreen.gml</script>
     <script>scripts\destroyOffSide.gml</script>
+    <script>scripts\growingCircle.gml</script>
   </scripts>
   <shaders name="shaders">
     <shaders name="shd_grp_glow">
