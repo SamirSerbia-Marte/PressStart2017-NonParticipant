@@ -656,10 +656,11 @@
     <option_xbone_title_id></option_xbone_title_id>
   </Options>
   <ConfigConstants>
-    <constants number="3">
+    <constants number="4">
       <constant name="MISSILE_DELAY">20</constant>
       <constant name="BLINK_INTERVAL">80</constant>
       <constant name="LASER_DAMAGE_INTERVAL">20</constant>
+      <constant name="HIT_ALPHA">0.25</constant>
     </constants>
   </ConfigConstants>
 </Config>

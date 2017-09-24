@@ -91,7 +91,10 @@ else
             <string>/// Grow!
 
 if(keyboard_check(global.keyAction[parentShip.playerNum]))
-    image_yscale -= growSpeed;
+{
+    if(image_yscale + y &gt; 0)
+        image_yscale -= growSpeed;
+}
 else
     image_yscale += growSpeed * 3;
     
@@ -135,6 +138,7 @@ if(collidingEnemy != noone)
     if(damageDelay &lt;= 0)
     {
         collidingEnemy.hp -= 5;                     // Deal damage
+        collidingEnemy.image_alpha = HIT_ALPHA;     // Set transparency to hit alpha value
         damageDelay = LASER_DAMAGE_INTERVAL;        // Delay the next serving of damage
     }
 }

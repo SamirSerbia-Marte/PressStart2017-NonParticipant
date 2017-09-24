@@ -89,6 +89,32 @@ if(hp &lt;= 0)
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Increment image alpha until value of 1
+
+if(image_alpha + 0.1 &lt; 1)
+    image_alpha += 0.1;
+else
+    image_alpha = 1;
+</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
     <event eventtype="4" ename="bullet_o">
       <action>
@@ -112,6 +138,30 @@ if(hp &lt;= 0)
           <argument>
             <kind>0</kind>
             <string>-4</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>611</id>
+        <kind>6</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>image_alpha</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>HIT_ALPHA</string>
           </argument>
         </arguments>
       </action>
