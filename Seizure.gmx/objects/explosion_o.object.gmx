@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_speed = 0.66;
+            <string>image_speed = 0.30;
 </string>
           </argument>
         </arguments>

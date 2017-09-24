@@ -32,12 +32,15 @@ parentShip = 0;
 
 // Initialize growSpeed
 growSpeed = 60;
+
+// Delay between dealing damage
+damageDelay = 0;
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="3" enumb="2">
+    <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -57,11 +60,14 @@ growSpeed = 60;
             <string>/// Follow parent ship
 
 // If the laser has a parent ship, follow the parent ship's x position
-if(parentShip != 0)
+if(instance_exists(parentShip))
 {
     x = parentShip.x;
     y = parentShip.y;
 }
+// If the parent ship is invalid, destroy self
+else
+    instance_destroy(self);
 </string>
           </argument>
         </arguments>
@@ -84,13 +90,54 @@ if(parentShip != 0)
             <kind>1</kind>
             <string>/// Grow!
 
-image_yscale -= growSpeed;
+if(keyboard_check(global.keyAction[parentShip.playerNum]))
+    image_yscale -= growSpeed;
+else
+    image_yscale += growSpeed * 3;
+    
+if(image_yscale &gt; 1)
+{
+    parentShip.myLaser = 0;
+    instance_destroy(self);
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Deal damage!
 
 var collidingEnemy = collision_rectangle(bbox_left, bbox_bottom, bbox_right, bbox_top, enemyParent_o, false, false);
 
-// If colliding with an enemy, adjust size to hit enemy
+// Decrement damage delay
+damageDelay -= 1;
+
+// If colliding with an enemy, adjust size to hit enemy and deal damage
 if(collidingEnemy != noone)
-    image_yscale = (collidingEnemy.y - y);
+{
+    image_yscale = (collidingEnemy.y - y);      // Adjust size
+    
+    if(damageDelay &lt;= 0)
+    {
+        collidingEnemy.hp -= 5;                     // Deal damage
+        damageDelay = LASER_DAMAGE_INTERVAL;        // Delay the next serving of damage
+    }
+}
 </string>
           </argument>
         </arguments>
