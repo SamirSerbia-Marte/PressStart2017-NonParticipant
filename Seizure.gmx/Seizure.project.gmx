@@ -72,7 +72,7 @@
     <object>objects\explosion_o</object>
     <object>objects\laser_o</object>
     <object>objects\enemyLaser_o</object>
-    <object>objects\object15</object>
+    <object>objects\snakeAttack_o</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\initGlobals_rm</room>
