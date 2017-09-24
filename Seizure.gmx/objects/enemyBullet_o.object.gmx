@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>__glow_texture = enemyBullet_glow_spr;
+flameFrame = 0;
 </string>
           </argument>
         </arguments>
@@ -105,7 +106,13 @@ destroyOffScreen();
 draw_self();
 
 // Draw flame
-draw_sprite_ext(flame_spr, -1, x + ((sprite_height/2) * sin(degtorad(image_angle))), y + ((sprite_height/2) * cos(degtorad(image_angle))), 1, 1, image_angle, image_blend, image_alpha);
+draw_sprite_ext(flame_spr, floor(flameFrame/4), x + ((sprite_height/2) * sin(degtorad(image_angle))), y + ((sprite_height/2) * cos(degtorad(image_angle))), 1, 1, image_angle, image_blend, image_alpha);
+
+// Increment flameFrame
+if(flameFrame == 11)
+    flameFrame = 0;
+else
+    flameFrame += 1;
 </string>
           </argument>
         </arguments>
