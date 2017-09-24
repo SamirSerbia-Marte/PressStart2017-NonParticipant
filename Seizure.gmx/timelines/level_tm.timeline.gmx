@@ -744,6 +744,7 @@ instance_create(room_width/2, y-48, growRingAttack_o);
         image_angle = 270;
         autoTargetX = room_width - 128;
         autoTargetY = room_height + 96;
+        speed = 10;
     }
 }
 </string>
@@ -779,6 +780,7 @@ with(laserMan1)
     autoTargetX = 128;
     autoTargetY = room_height/4;
     currentlyAutoMoving = true;
+    speed = 10;
 }
 
 laserMan2 = instance_create(room_width - 128, room_height, enemy3_o);
@@ -789,6 +791,7 @@ with(laserMan2)
     autoTargetX = room_width - 128;
     autoTargetY = (room_height/4) * 3;
     currentlyAutoMoving = true;
+    speed = 10;
 }
 
 laserMan3 = instance_create(0, (room_height/4) * 3, enemy3_o);
@@ -799,6 +802,7 @@ with(laserMan3)
     autoTargetX = room_width/4;
     autoTargetY = (room_height/4) * 3;
     currentlyAutoMoving = true;
+    speed = 10;
 }
 
 laserMan4 = instance_create(0, room_height/4, enemy3_o);
@@ -809,6 +813,7 @@ with(laserMan3)
     autoTargetX = (room_width/4) * 3;
     autoTargetY = room_height/4;
     currentlyAutoMoving = true;
+    speed = 10;
 }
 </string>
           </argument>
